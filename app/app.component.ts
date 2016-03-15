@@ -80,4 +80,8 @@ export class AppComponent {
   onSelect(hero: Hero) {
     this.selectedHero = hero;
   }
+
+  getHeroes() {
+    this.heroes = this._heroService.getHeroes();
+  }
 }
